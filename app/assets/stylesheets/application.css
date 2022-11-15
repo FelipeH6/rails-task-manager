@@ -13,3 +13,62 @@
  *= require_tree .
  *= require_self
  */
+ @import "bootstrap/scss/bootstrap";
+
+
+ body{
+   padding: 20px;
+   color: #333333;
+   ul {
+     list-style: none;
+     padding-left: 0;
+   }
+   hr {
+     display: block; height: 1px;
+     border: 0; border-top: 1px solid #CCCCCC;
+     margin-top: 20px;
+     margin-bottom: 20px;
+   }
+   a {
+     text-decoration: none;
+     color: #377BB5;
+     &:hover{
+       color: #2B608D;
+       text-decoration: underline;
+     }
+   }
+
+   form {
+     label {
+       font-weight: 500;
+     }
+     .btn {
+       background-color: #377BB5;
+       color: white;
+       border: none;
+       &:hover{
+         background-color: #2B608D;
+         color: white;
+       }
+     }
+   }
+
+   #details{
+     background-color: #F5F5F5;
+     border: 1px solid #EEEEEE;
+     border-radius: 5px;
+     padding: 20px;
+     box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+   }
+
+   #edit{
+     position:absolute;
+     top: 20px;
+     right: 20px;
+     border: 1px solid #DDDDDD;
+     text-decoration: none;
+     &:hover{
+       background-color: #E6E6E6;
+     }
+   }
+ }
